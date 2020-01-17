@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        app:cardCornerRadius="@dimen/dp_12"
+        app:cardElevation="@dimen/dp_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_marginTop="@dimen/dp_10"
+            android:layout_width="@dimen/dp_292"
+            android:layout_height="@dimen/dp_97"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/iv_photo"
+                android:layout_width="@dimen/dp_81"
+                android:layout_height="@dimen/dp_81"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:src="@mipmap/ic_launcher" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="@dimen/dp_10">
+
+                <TextView
+                    android:id="@+id/tv_p_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="商品信息" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true">
+
+                    <TextView
+                        android:id="@+id/tv_price"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="价格"
+                        android:textColor="#ff0000" />
+
+                    <com.bawei.day0117.wight.NumLayout
+                        android:id="@+id/num_layout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true" />
+                </RelativeLayout>
+
+            </RelativeLayout>
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+</LinearLayout>
